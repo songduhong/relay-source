@@ -1,0 +1,111 @@
+<main class="app-main">
+    <section class="app-header">
+      <div class="app-title">
+        <h1>Orders</h1>
+        <p>Track mixed-SKU procurement, warehouse status and landed-cost estimates.</p>
+      </div>
+      <a class="btn btn-primary" href="quote.html">New order</a>
+    </section>
+
+    <div class="access-banner">
+      <div><strong>Demo preview.</strong> Live orders, supplier proof, invoices and QC files require client access.</div>
+      <a class="btn btn-primary" href="auth.html">Sign in to continue</a>
+    </div>
+    <section class="kpi-band">
+      <article class="mini-card"><span class="kpi-label">Active SKUs</span><div class="kpi-value">128</div><div class="kpi-sub">36 in SH-2451</div></article>
+      <article class="mini-card"><span class="kpi-label">Units in carton</span><div class="kpi-value">1,520</div><div class="kpi-sub">8 suppliers</div></article>
+      <article class="mini-card"><span class="kpi-label">Landed estimate</span><div class="kpi-value">$6,438.72</div><div class="kpi-sub">DDP · air + sea option</div></article>
+      <article class="mini-card"><span class="kpi-label">Avg lead time</span><div class="kpi-value">12d</div><div class="kpi-sub">Quote to dispatch</div></article>
+      <article class="mini-card"><span class="kpi-label">Needs action</span><div class="kpi-value">3</div><div class="kpi-sub">Docs, QC or approval</div></article>
+    </section>
+
+    <section class="split-grid">
+      <div class="table-wrap">
+        <div style="padding:20px 20px 0">
+          <div class="toolbar">
+            <div class="chip-row" role="tablist" aria-label="Filter SKUs">
+              <button class="chip active" data-filter="all">All SKUs</button>
+              <button class="chip" data-filter="action">Needs action</button>
+              <button class="chip" data-filter="qc">Awaiting QC</button>
+              <button class="chip" data-filter="ready">Ready to ship</button>
+              <button class="chip" data-filter="shipped">Shipped</button>
+            </div>
+            <label class="search"><span aria-hidden="true">🔍</span><input data-search type="search" placeholder="Search SKU, product or supplier"></label>
+          </div>
+        </div>
+        <div class="table-scroll">
+          <table class="table">
+            <thead>
+              <tr><th>SKU</th><th>Supplier</th><th>Qty</th><th>Unit</th><th>Landed</th><th>Risk</th><th>QC</th><th>Status</th></tr>
+            </thead>
+            <tbody>
+              <tr data-status="ready">
+                <td><div class="product-cell"><div class="thumb">📱</div><div><div class="product-name">PC-IP15-MAG-001</div><div class="product-meta">MagSafe iPhone 15 Pro case</div></div></div></td>
+                <td>Shenzhen CaseLab</td><td>120</td><td>$3.10</td><td>$4.68</td><td><span class="badge badge-success">Low</span></td><td><span class="badge badge-success">Passed</span></td><td><span class="badge badge-info">Ready to ship</span></td>
+              </tr>
+              <tr data-status="qc">
+                <td><div class="product-cell"><div class="thumb">🔌</div><div><div class="product-name">CB-USBC-240-100</div><div class="product-meta">240W USB-C cable</div></div></div></td>
+                <td>HQB Cable Hub</td><td>200</td><td>$1.85</td><td>$2.43</td><td><span class="badge badge-warning">Medium</span></td><td><span class="badge badge-warning">Pending</span></td><td><span class="badge badge-warning">Awaiting QC</span></td>
+              </tr>
+              <tr data-status="action">
+                <td><div class="product-cell"><div class="thumb">🔋</div><div><div class="product-name">CHG-65W-GAN-02</div><div class="product-meta">65W GaN charger</div></div></div></td>
+                <td>PowerLine Tech</td><td>80</td><td>$8.40</td><td>$10.36</td><td><span class="badge badge-danger">High</span></td><td><span class="badge badge-danger">Action needed</span></td><td><span class="badge badge-danger">Docs required</span></td>
+              </tr>
+              <tr data-status="ready">
+                <td><div class="product-cell"><div class="thumb">🎧</div><div><div class="product-name">SPK-MINI-BT-04</div><div class="product-meta">Mini Bluetooth speaker</div></div></div></td>
+                <td>Audio Square</td><td>60</td><td>$5.20</td><td>$6.67</td><td><span class="badge badge-warning">Medium</span></td><td><span class="badge badge-success">Passed</span></td><td><span class="badge badge-info">Ready to ship</span></td>
+              </tr>
+              <tr data-status="action">
+                <td><div class="product-cell"><div class="thumb">🧲</div><div><div class="product-name">STD-MAG-3IN1-01</div><div class="product-meta">3-in-1 magnetic stand</div></div></div></td>
+                <td>AccessPoint Shenzhen</td><td>80</td><td>$7.15</td><td>$9.92</td><td><span class="badge badge-warning">Medium</span></td><td><span class="badge badge-warning">Pending</span></td><td><span class="badge badge-danger">Approval needed</span></td>
+              </tr>
+              <tr data-status="qc">
+                <td><div class="product-cell"><div class="thumb">💡</div><div><div class="product-name">LED-DESK-BAR-08</div><div class="product-meta">LED desk light bar</div></div></div></td>
+                <td>Lumen Source</td><td>100</td><td>$4.30</td><td>$5.60</td><td><span class="badge badge-success">Low</span></td><td><span class="badge badge-warning">Pending</span></td><td><span class="badge badge-warning">Awaiting QC</span></td>
+              </tr>
+              <tr data-status="ready">
+                <td><div class="product-cell"><div class="thumb">🎮</div><div><div class="product-name">GMP-MOB-GRIP-02</div><div class="product-meta">Mobile gaming grip</div></div></div></td>
+                <td>Playline Accessories</td><td>150</td><td>$2.80</td><td>$3.54</td><td><span class="badge badge-success">Low</span></td><td><span class="badge badge-success">Passed</span></td><td><span class="badge badge-info">Ready to ship</span></td>
+              </tr>
+              <tr data-status="shipped">
+                <td><div class="product-cell"><div class="thumb">📦</div><div><div class="product-name">PKG-BOX-MIX-A</div><div class="product-meta">Consolidated carton A</div></div></div></td>
+                <td>Shenzhen Hub</td><td>640</td><td>—</td><td>—</td><td><span class="badge badge-success">Cleared</span></td><td><span class="badge badge-success">Completed</span></td><td><span class="badge badge-success">Shipped</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <aside class="app-main">
+        <article class="card flat summary-card">
+          <div class="card-title"><h3>SH-2451 progress</h3><span class="badge badge-info">68%</span></div>
+          <ul class="timeline">
+            <li class="done"><strong>Quote approved</strong>36 SKUs · 8 suppliers</li>
+            <li class="done"><strong>Paid in USD</strong>$4,470.00 procurement + fees</li>
+            <li class="done"><strong>Supplier collection</strong>7 of 8 suppliers received</li>
+            <li class="current"><strong>QC & consolidation</strong>24 SKUs passed · 9 pending</li>
+            <li><strong>DDP dispatch</strong>ETA Dec 18 · Los Angeles, US</li>
+          </ul>
+        </article>
+
+        <article class="card flat">
+          <div class="card-title"><h3>Landed cost</h3><span class="badge badge-neutral">Estimate</span></div>
+          <ul class="panel-list">
+            <li><span>Goods cost</span><strong>$3,120.00</strong></li>
+            <li><span>Service fee · 6%</span><strong>$187.20</strong></li>
+            <li><span>Packaging</span><strong>$145.00</strong></li>
+            <li><span>Domestic transport</span><strong>$76.00</strong></li>
+            <li><span>International freight</span><strong>$2,410.00</strong></li>
+            <li><span>Duties & taxes</span><strong>$523.52</strong></li>
+            <li><span>FBA prep</span><strong>$177.00</strong></li>
+          </ul>
+          <div class="total-row"><span>Total</span><span>$6,438.72</span></div>
+          <a class="btn btn-ghost btn-block" href="order.html" style="margin-top:18px">Open order detail</a>
+        </article>
+
+        <article class="notice">
+          <span>⚠️</span><span><strong>3 items need action.</strong> Upload the charger compliance document and approve magnetic stand packaging.</span>
+        </article>
+      </aside>
+    </section>
+  </main>

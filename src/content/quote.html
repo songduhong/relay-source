@@ -1,0 +1,119 @@
+<main>
+  <section class="section">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow">New buy list</span>
+        <h1 style="font-size:clamp(34px,4vw,52px)">Get a structured sourcing quote</h1>
+        <p class="lead">Upload a spreadsheet or describe what you need. We return supplier options, SKU-level landed cost and risk flags. No payment until you approve the quote.</p>
+      </div>
+      <div class="timeline-horizontal">
+        <div class="timeline-step active">1 · Upload list</div>
+        <div class="timeline-step">2 · Product details</div>
+        <div class="timeline-step">3 · Destination</div>
+        <div class="timeline-step">4 · Review quote</div>
+        <div class="timeline-step">5 · Approve & buy</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section tight" id="quote-form">
+    <div class="container split-grid">
+      <div class="form-card">
+        <form>
+          <h2 style="font-size:24px;margin-bottom:18px">1 · Upload your buy list</h2>
+          <div class="upload" id="upload-zone">
+            <strong>Drop Excel, CSV or PDF here</strong>
+            <p class="small">Include SKU name, image link, target quantity, color, model, interface and target retail price.</p>
+            <label class="btn btn-ghost" for="file-input">Browse files</label>
+            <input id="file-input" type="file" hidden accept=".xlsx,.xls,.csv,.pdf">
+            <div id="file-preview"></div>
+          </div>
+
+          <h2 style="font-size:24px;margin:32px 0 18px">2 · Product scope</h2>
+          <div class="check-grid">
+            <label class="check-card"><input type="checkbox" name="category" checked>📱 Phone cases & protective accessories</label>
+            <label class="check-card"><input type="checkbox" name="category" checked>🔌 Cables & adapters</label>
+            <label class="check-card"><input type="checkbox" name="category">🔋 Chargers & MagSafe products</label>
+            <label class="check-card"><input type="checkbox" name="category">🎧 Audio accessories</label>
+            <label class="check-card"><input type="checkbox" name="category">💡 LED / desk accessories</label>
+            <label class="check-card"><input type="checkbox" name="category">🎮 Gaming accessories</label>
+          </div>
+
+          <h2 style="font-size:24px;margin:32px 0 18px">3 · Requirements</h2>
+          <div class="form-grid">
+            <div class="field"><label for="target-price">Target unit cost</label><input class="input" id="target-price" placeholder="e.g. $2.50 – $5.00"></div>
+            <div class="field"><label for="qty">Units per SKU</label><select id="qty"><option>5–10 units</option><option selected>10–20 units</option><option>20–50 units</option><option>50–100 units</option></select></div>
+            <div class="field"><label for="launch">Target launch date</label><input class="input" id="launch" type="text" inputmode="numeric" placeholder="YYYY-MM-DD"></div>
+            <div class="field"><label for="channel">Sales channel</label><select id="channel"><option selected>TikTok Shop</option><option>Shopify</option><option>Amazon FBA</option><option>eBay</option><option>Retail store</option></select></div>
+            <div class="field"><label for="destination">Destination ZIP</label><input class="input" id="destination" placeholder="e.g. 78701"></div>
+            <div class="field"><label for="freight">Preferred shipping</label><select id="freight"><option selected>DDP air</option><option>DDP sea</option><option>UPS / FedEx express</option><option>Amazon FBA pickup</option></select></div>
+            <div class="field">
+              <label for="quote-email">Work email *</label>
+              <input class="input" id="quote-email" name="quote-email" type="email" placeholder="you@company.com" autocomplete="email" required>
+              <span class="hint">We send the quote, guest tracking link and order updates here.</span>
+            </div>
+          </div>
+
+          <h2 style="font-size:24px;margin:32px 0 18px">4 · Optional services</h2>
+          <div class="check-grid">
+            <label class="check-card"><input type="checkbox" checked>🔍 SKU count verification</label>
+            <label class="check-card"><input type="checkbox" checked>📷 Warehouse photos</label>
+            <label class="check-card"><input type="checkbox">🏷️ FNSKU / UPC labeling</label>
+            <label class="check-card"><input type="checkbox">🧾 Compliance pre-check</label>
+            <label class="check-card"><input type="checkbox">🖼️ White-background photos</label>
+            <label class="check-card"><input type="checkbox">🎥 Product video</label>
+          </div>
+
+          <h2 style="font-size:24px;margin:32px 0 18px">5 · Notes</h2>
+          <div class="field">
+            <label for="notes">Anything we should know?</label>
+            <textarea id="notes" rows="5" placeholder="Example: looking for MagSafe-compatible iPhone 15 cases. Prefer minimalist colors. Need DDP to Los Angeles and TikTok-ready packaging."></textarea>
+          </div>
+          <div style="display:flex;gap:12px;justify-content:flex-end;margin-top:26px">
+            <button class="btn btn-ghost" type="button">Save draft</button>
+            <button class="btn btn-primary" type="submit">Submit buy list</button>
+          </div>
+        </form>
+      </div>
+
+      <aside class="summary-card app-main">
+        <article class="card flat">
+          <div class="card-title"><h3>Live summary</h3><span class="badge badge-info">Draft</span></div>
+          <ul class="panel-list">
+            <li><span>Upload</span><strong id="summary-file">No file</strong></li>
+            <li><span>Categories</span><strong id="summary-category">2 selected</strong></li>
+            <li><span>Units per SKU</span><strong>10–20</strong></li>
+            <li><span>Channel</span><strong>TikTok Shop</strong></li>
+            <li><span>Shipping</span><strong>DDP air</strong></li>
+            <li><span>Email</span><strong id="summary-email">Not provided</strong></li>
+          </ul>
+          <div class="notice info" style="margin-top:18px"><span>💡</span><span>For phone cases, we recommend 10–20 units per SKU across at least 20 designs for a meaningful test.</span></div>
+        </article>
+
+                <article class="card flat">
+          <div class="card-title"><h3>First-order protection</h3><span class="badge badge-success">Recommended</span></div>
+          <ul class="panel-list">
+            <li><span>Company invoice</span><span class="badge badge-success">Included</span></li>
+            <li><span>Supplier purchase proof</span><span class="badge badge-success">Stored</span></li>
+            <li><span>QC evidence</span><span class="badge badge-warning">Before dispatch</span></li>
+            <li><span>Milestone payment</span><span class="badge badge-info">Available</span></li>
+          </ul>
+          <p class="small muted" style="margin-top:14px">Pay RelaySource, not a personal account. You review counts, photos, compatibility and documents before dispatch.</p>
+          <a class="link" href="payment-protection.html">See payment protection →</a>
+        </article>
+<article class="card flat">
+          <div class="card-title"><h3>Estimate range</h3><span class="badge badge-neutral">Indicative</span></div>
+          <ul class="panel-list">
+            <li><span>Procurement service</span><strong>6%–8%</strong></li>
+            <li><span>SKU operations</span><strong>$0.35–$0.80 / SKU</strong></li>
+            <li><span>QC base</span><strong>Included</strong></li>
+            <li><span>DDP delivery</span><strong>Quoted by lane</strong></li>
+          </ul>
+          <div class="total-row"><span>Minimum</span><span>$100</span></div>
+          <a class="btn btn-primary btn-block" href="#quote-form" style="margin-top:18px">Continue</a>
+          <p class="small muted" style="margin-top:12px">Secure payment options: Stripe, credit card, bank transfer or wire. First orders receive a company invoice and payment receipt.</p>
+        </article>
+      </aside>
+    </div>
+  </section>
+</main>

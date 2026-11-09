@@ -1,0 +1,75 @@
+<main>
+  <section class="auth-shell">
+    <div class="container auth-grid">
+      <aside class="auth-benefits">
+        <span class="eyebrow">Client workspace</span>
+        <h1>Track your China order in one place</h1>
+        <p class="lead">Your dashboard keeps SKU quotes, supplier records, QC photos, invoices and worldwide delivery status together.</p>
+        <ul class="feature-list">
+          <li>SKU-level procurement and landed-cost tracking</li>
+          <li>Supplier name, price, quantity and purchase proof</li>
+          <li>QC evidence before dispatch approval</li>
+          <li>Company invoices and payment receipts</li>
+          <li>FBA / TikTok / Shopify-ready shipment status</li>
+        </ul>
+        <div class="notice info" style="margin-top:24px">
+          <span>🔐</span>
+          <span><strong>Private workspace.</strong> Order files, payment documents and supplier records are only visible to signed-in clients.</span>
+        </div>
+        <div class="trust-row" style="margin-top:22px">
+          <span class="trust-chip">Google sign-in</span>
+          <span class="trust-chip">Email magic link</span>
+          <span class="trust-chip">No public order data</span>
+        </div>
+      </aside>
+
+      <section class="auth-card" aria-labelledby="auth-title">
+        <h2 id="auth-title">Sign in or create access</h2>
+        <p class="small muted">New client? Start with a quote first. We will create your workspace when the order is approved.</p>
+
+        <div class="auth-tabs" role="tablist" aria-label="Choose sign in or create account">
+          <button class="chip active" id="tab-signin" data-auth-tab="signin" role="tab" aria-selected="true">Sign in</button>
+          <button class="chip" id="tab-register" data-auth-tab="register" role="tab" aria-selected="false">Create account</button>
+        </div>
+
+        <form id="panel-signin" class="auth-form" data-auth-panel="signin">
+          <div class="field">
+            <label for="login-email">Work email</label>
+            <input class="input" id="login-email" type="email" placeholder="you@company.com" autocomplete="email">
+          </div>
+          <div class="field">
+            <label for="login-password">Password</label>
+            <input class="input" id="login-password" type="password" placeholder="Enter password" autocomplete="current-password">
+          </div>
+          <div class="auth-row">
+            <label class="checkbox-line"><input type="checkbox" checked> Keep me signed in</label>
+            <a class="link" href="#">Forgot password?</a>
+          </div>
+          <button class="btn btn-primary btn-block" type="submit">Sign in</button>
+          <div class="divider"><span>or continue with</span></div>
+          <div class="oauth-grid">
+            <button class="btn btn-ghost" type="button">Google</button>
+            <button class="btn btn-ghost" type="button">Magic link</button>
+          </div>
+          <p class="small muted center">Protected by encrypted connection. We never share supplier pricing publicly.</p>
+        </form>
+
+        <form id="panel-register" class="auth-form hidden" data-auth-panel="register">
+          <div class="form-grid">
+            <div class="field"><label for="reg-name">Full name</label><input class="input" id="reg-name" placeholder="Jordan Reed"></div>
+            <div class="field"><label for="reg-company">Company</label><input class="input" id="reg-company" placeholder="Reed Retail LLC"></div>
+          </div>
+          <div class="field"><label for="reg-email">Work email</label><input class="input" id="reg-email" type="email" placeholder="you@company.com" autocomplete="email"></div>
+          <div class="field"><label for="reg-password">Create password</label><input class="input" id="reg-password" type="password" placeholder="At least 8 characters" autocomplete="new-password"></div>
+          <div class="field"><label for="reg-channel">Primary sales channel</label><select id="reg-channel"><option>TikTok Shop</option><option>Shopify</option><option>Amazon FBA</option><option>eBay</option><option>Retail store</option></select></div>
+          <label class="checkbox-line"><input type="checkbox" checked> Send order updates by email</label>
+          <button class="btn btn-primary btn-block" type="submit">Create workspace access</button>
+          <div class="notice" style="margin-top:18px">
+            <span>💡</span>
+            <span><strong>Recommended:</strong> submit your buy list first. You can create workspace access when you approve the quote.</span>
+          </div>
+        </form>
+      </section>
+    </div>
+  </section>
+</main>

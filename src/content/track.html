@@ -1,0 +1,103 @@
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow">Guest order lookup</span>
+        <h1>Track your order without an account</h1>
+        <p class="lead">Enter your order number and quote email to see sanitized order status, shipment stage and SKU progress. Supplier pricing, invoices and QC files remain private.</p>
+        <div class="trust-row">
+          <span class="trust-chip">🔐 <strong>No login required</strong></span>
+          <span class="trust-chip">📦 <strong>Limited public data</strong></span>
+          <span class="trust-chip">🧾 <strong>No pricing exposure</strong></span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title"><h3>Find your order</h3><span class="badge badge-info">Guest</span></div>
+        <form id="guest-lookup-form" class="auth-form" novalidate>
+          <div class="field">
+            <label for="lookup-order">Order number</label>
+            <input class="input" id="lookup-order" placeholder="SH-2451" autocomplete="off">
+          </div>
+          <div class="field">
+            <label for="lookup-email">Quote email</label>
+            <input class="input" id="lookup-email" type="email" placeholder="you@company.com" autocomplete="email">
+            <span class="hint">Use the email used when submitting your buy list.</span>
+          </div>
+          <button class="btn btn-primary btn-block" type="submit">View order detail</button>
+          <div id="lookup-error" class="notice hidden" style="background:var(--danger-soft);border-color:#ffc2bd;color:#b42318"><span>⚠️</span><span>No matching demo order. Use <strong>SH-2451</strong> and any valid email for the demo.</span></div>
+          <p class="small muted center">Demo lookup: <strong>SH-2451</strong> + any valid email.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="section tight hidden" id="guest-order-result">
+    <div class="container">
+      <div class="app-header">
+        <div class="app-title">
+          <h1>Order SH-2451</h1>
+          <p>Guest view · sanitized public detail · Los Angeles, CA 90001</p>
+        </div>
+        <span class="badge badge-info">In QC · ETA Dec 18</span>
+      </div>
+
+      <section class="kpi-band" style="margin-top:24px">
+        <article class="mini-card"><span class="kpi-label">SKUs</span><div class="kpi-value">36</div><div class="kpi-sub">24 passed</div></article>
+        <article class="mini-card"><span class="kpi-label">Units</span><div class="kpi-value">1,520</div><div class="kpi-sub">Count verified</div></article>
+        <article class="mini-card"><span class="kpi-label">Cartons</span><div class="kpi-value">4</div><div class="kpi-sub">Max 21kg each</div></article>
+        <article class="mini-card"><span class="kpi-label">Progress</span><div class="kpi-value">68%</div><div class="kpi-sub">QC & consolidation</div></article>
+        <article class="mini-card"><span class="kpi-label">ETA</span><div class="kpi-value">Dec 18</div><div class="kpi-sub">DDP to Los Angeles</div></article>
+      </section>
+
+      <section class="split-grid" style="margin-top:24px">
+        <div class="app-main">
+          <article class="card flat">
+            <div class="card-title"><h3>Order status</h3><span class="badge badge-warning">Limited guest view</span></div>
+            <ul class="timeline">
+              <li class="done"><strong>Quote approved</strong>36 SKUs · 8 suppliers</li>
+              <li class="done"><strong>Payment settled</strong>Order accepted into managed workflow</li>
+              <li class="done"><strong>Supplier collection</strong>7 of 8 suppliers received</li>
+              <li class="current"><strong>QC & consolidation</strong>24 SKUs passed · 9 pending</li>
+              <li><strong>DDP dispatch</strong>ETA Dec 18 · Los Angeles, US</li>
+            </ul>
+          </article>
+
+          <article class="card flat">
+            <div class="card-title"><h3>SKU progress</h3><span class="badge badge-success">24/36 passed</span></div>
+            <div class="table-scroll">
+              <table class="table">
+                <thead><tr><th>SKU</th><th>Product type</th><th>Qty</th><th>Status</th><th>QC</th></tr></thead>
+                <tbody>
+                  <tr><td>PC-IP15-MAG-001</td><td>Phone case</td><td>120</td><td><span class="badge badge-info">Ready</span></td><td><span class="badge badge-success">Passed</span></td></tr>
+                  <tr><td>CB-USBC-240-100</td><td>Cable</td><td>200</td><td><span class="badge badge-warning">In QC</span></td><td><span class="badge badge-warning">Pending</span></td></tr>
+                  <tr><td>CHG-65W-GAN-02</td><td>Charger</td><td>80</td><td><span class="badge badge-danger">Action</span></td><td><span class="badge badge-danger">Docs needed</span></td></tr>
+                  <tr><td>STD-MAG-3IN1-01</td><td>Magnetic stand</td><td>80</td><td><span class="badge badge-info">Ready</span></td><td><span class="badge badge-success">Passed</span></td></tr>
+                  <tr><td>SPK-MINI-BT-04</td><td>Audio</td><td>60</td><td><span class="badge badge-info">Ready</span></td><td><span class="badge badge-success">Passed</span></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+        </div>
+
+        <aside class="app-main">
+          <article class="card flat summary-card">
+            <div class="card-title"><h3>Guest visibility</h3><span class="badge badge-neutral">Limited</span></div>
+            <ul class="panel-list">
+              <li><span>Order status</span><span class="badge badge-success">Visible</span></li>
+              <li><span>SKU counts</span><span class="badge badge-success">Visible</span></li>
+              <li><span>Shipment stage</span><span class="badge badge-success">Visible</span></li>
+              <li><span>Supplier names</span><span class="badge badge-danger">Hidden</span></li>
+              <li><span>Unit costs</span><span class="badge badge-danger">Hidden</span></li>
+              <li><span>Invoices</span><span class="badge badge-danger">Private</span></li>
+              <li><span>QC documents</span><span class="badge badge-danger">Private</span></li>
+            </ul>
+            <a class="btn btn-primary btn-block" href="auth.html" style="margin-top:18px">Sign in for full order</a>
+            <p class="small muted" style="margin-top:12px">Full order detail includes supplier proof, landed cost, QC gallery and payment documents.</p>
+          </article>
+
+          <article class="notice info"><span>🔐</span><span>This guest view never exposes supplier pricing, client invoices or private QC files.</span></article>
+        </aside>
+      </section>
+    </div>
+  </section>
+</main>

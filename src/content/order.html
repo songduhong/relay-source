@@ -1,0 +1,121 @@
+<main class="app-main">
+    <section class="app-header" id="summary">
+      <div class="app-title">
+        <h1>Order SH-2451</h1>
+        <p>36 SKUs · 8 suppliers · destination Los Angeles, CA 90001</p>
+      </div>
+      <div style="display:flex;gap:12px;align-items:center">
+        <span class="badge badge-info">In QC</span>
+        <strong>ETA Dec 18</strong>
+      </div>
+    </section>
+
+    <div class="access-banner">
+      <div><strong>Private order.</strong> This is a sanitized demo. Live clients must sign in to view supplier pricing, QC files and payment records.</div>
+      <a class="btn btn-primary" href="auth.html">Sign in to continue</a>
+    </div>
+    <section class="card flat">
+      <div class="timeline-horizontal">
+        <div class="timeline-step done">Quote approved<br><span class="muted">Nov 24</span></div>
+        <div class="timeline-step done">Payment settled<br><span class="muted">Nov 24</span></div>
+        <div class="timeline-step done">Supplier collection<br><span class="muted">7/8 complete</span></div>
+        <div class="timeline-step active">QC & consolidation<br><span class="muted">24/36 passed</span></div>
+        <div class="timeline-step">DDP dispatch<br><span class="muted">ETA Dec 18</span></div>
+      </div>
+    </section>
+
+    <section class="kpi-band">
+      <article class="mini-card"><span class="kpi-label">SKUs</span><div class="kpi-value">36</div><div class="kpi-sub">24 passed</div></article>
+      <article class="mini-card"><span class="kpi-label">Units</span><div class="kpi-value">1,520</div><div class="kpi-sub">Count verified</div></article>
+      <article class="mini-card"><span class="kpi-label">Landed</span><div class="kpi-value">$6,438.72</div><div class="kpi-sub">Estimate</div></article>
+      <article class="mini-card"><span class="kpi-label">Cartons</span><div class="kpi-value">4</div><div class="kpi-sub">Max 21kg each</div></article>
+      <article class="mini-card"><span class="kpi-label">Risks</span><div class="kpi-value">3</div><div class="kpi-sub">1 high · 2 medium</div></article>
+    </section>
+
+    <section class="split-grid">
+      <div class="app-main">
+        <article class="table-wrap" id="skus">
+          <div class="card-title" style="padding:20px"><h3>SKU procurement list</h3><span class="badge badge-warning">9 pending</span></div>
+          <div class="table-scroll">
+            <table class="table">
+              <thead><tr><th>SKU</th><th>Supplier</th><th>Qty</th><th>Landed</th><th>Risk</th><th>QC</th><th>Action</th></tr></thead>
+              <tbody>
+                <tr><td><div class="product-cell"><div class="thumb">📱</div><div><div class="product-name">PC-IP15-MAG-001</div><div class="product-meta">MagSafe iPhone 15 Pro</div></div></div></td><td>Shenzhen CaseLab</td><td>120</td><td>$4.68</td><td><span class="badge badge-success">Low</span></td><td><span class="badge badge-success">Passed</span></td><td><a class="link" href="#">Photos</a></td></tr>
+                <tr><td><div class="product-cell"><div class="thumb">🔌</div><div><div class="product-name">CB-USBC-240-100</div><div class="product-meta">240W USB-C cable</div></div></div></td><td>HQB Cable Hub</td><td>200</td><td>$2.43</td><td><span class="badge badge-warning">Medium</span></td><td><span class="badge badge-warning">Pending</span></td><td><a class="link" href="#">Inspect</a></td></tr>
+                <tr><td><div class="product-cell"><div class="thumb">🔋</div><div><div class="product-name">CHG-65W-GAN-02</div><div class="product-meta">65W GaN charger</div></div></div></td><td>PowerLine Tech</td><td>80</td><td>$10.36</td><td><span class="badge badge-danger">High</span></td><td><span class="badge badge-danger">Action needed</span></td><td><a class="link" href="#">Docs</a></td></tr>
+                <tr><td><div class="product-cell"><div class="thumb">🧲</div><div><div class="product-name">STD-MAG-3IN1-01</div><div class="product-meta">3-in-1 magnetic stand</div></div></div></td><td>AccessPoint</td><td>80</td><td>$9.92</td><td><span class="badge badge-warning">Medium</span></td><td><span class="badge badge-success">Passed</span></td><td><a class="link" href="#">Approve</a></td></tr>
+                <tr><td><div class="product-cell"><div class="thumb">🎧</div><div><div class="product-name">SPK-MINI-BT-04</div><div class="product-meta">Mini Bluetooth speaker</div></div></div></td><td>Audio Square</td><td>60</td><td>$6.67</td><td><span class="badge badge-warning">Medium</span></td><td><span class="badge badge-success">Passed</span></td><td><a class="link" href="#">Photos</a></td></tr>
+                <tr><td><div class="product-cell"><div class="thumb">💡</div><div><div class="product-name">LED-DESK-BAR-08</div><div class="product-meta">LED desk light bar</div></div></div></td><td>Lumen Source</td><td>100</td><td>$5.60</td><td><span class="badge badge-success">Low</span></td><td><span class="badge badge-warning">Pending</span></td><td><a class="link" href="#">Inspect</a></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="card flat" id="qc">
+          <div class="card-title"><h3>QC gallery</h3><span class="badge badge-info">Updated Nov 30</span></div>
+          <div class="photo-grid">
+            <div class="photo">SKU 001 · front</div>
+            <div class="photo">SKU 001 · back</div>
+            <div class="photo">SKU 002 · connector</div>
+            <div class="photo">SKU 003 · label</div>
+            <div class="photo">SKU 004 · magnet</div>
+            <div class="photo">SKU 005 · packaging</div>
+            <div class="photo">SKU 006 · size</div>
+            <div class="photo">Carton · packed</div>
+          </div>
+          <p class="small muted" style="margin-top:16px">Each SKU record keeps supplier, purchase price, quantity, dimensions, weight, photos, QC result and risk notes.</p>
+        </article>
+
+        <article class="card flat" id="suppliers">
+          <div class="card-title"><h3>Suppliers</h3><span class="badge badge-success">7 received</span></div>
+          <ul class="panel-list">
+            <li><span><strong>Shenzhen CaseLab</strong><br><span class="small muted">Phone cases · repeat supplier · QC 98%</span></span><span class="badge badge-success">Received</span></li>
+            <li><span><strong>HQB Cable Hub</strong><br><span class="small muted">Cables · spot purchase · QC pending</span></span><span class="badge badge-warning">In QC</span></li>
+            <li><span><strong>PowerLine Tech</strong><br><span class="small muted">Chargers · compliance docs required</span></span><span class="badge badge-danger">Action</span></li>
+            <li><span><strong>AccessPoint Shenzhen</strong><br><span class="small muted">Magnetic stands · version approved</span></span><span class="badge badge-success">Received</span></li>
+          </ul>
+        </article>
+      </div>
+
+      <aside class="app-main">
+        <article class="card flat summary-card">
+          <div class="card-title"><h3>Cost breakdown</h3><span class="badge badge-neutral">Estimate</span></div>
+          <ul class="panel-list">
+            <li><span>Goods cost</span><strong>$3,120.00</strong></li>
+            <li><span>Service fee</span><strong>$187.20</strong></li>
+            <li><span>Packaging</span><strong>$145.00</strong></li>
+            <li><span>Domestic freight</span><strong>$76.00</strong></li>
+            <li><span>International freight</span><strong>$2,410.00</strong></li>
+            <li><span>Duties & taxes</span><strong>$523.52</strong></li>
+            <li><span>FBA prep</span><strong>$177.00</strong></li>
+          </ul>
+          <div class="total-row"><span>Total</span><span>$6,438.72</span></div>
+        </article>
+
+        <article class="card flat" id="documents">
+          <div class="card-title"><h3>Documents</h3><span class="badge badge-warning">1 missing</span></div>
+          <ul class="panel-list">
+            <li><span>Commercial invoice</span><span class="badge badge-success">Ready</span></li>
+            <li><span>Packing list</span><span class="badge badge-success">Ready</span></li>
+            <li><span>HS code sheet</span><span class="badge badge-success">Ready</span></li>
+            <li><span>Battery statement</span><span class="badge badge-danger">Missing</span></li>
+            <li><span>Supplier invoices</span><span class="badge badge-success">Ready</span></li>
+          </ul>
+          <button class="btn btn-ghost btn-block" style="margin-top:18px">Request document</button>
+        </article>
+
+        <article class="notice">
+          <span>⚠️</span><span><strong>High-risk SKU:</strong> CHG-65W-GAN-02 requires plug type, certification and battery documentation before dispatch.</span>
+        </article>
+
+        <article class="card flat" id="shipping">
+          <div class="card-title"><h3>Shipping options</h3></div>
+          <ul class="panel-list">
+            <li><span><strong>DDP air</strong><br><span class="small muted">7–10 days · includes duties</span></span><strong>$2,410</strong></li>
+            <li><span><strong>UPS express</strong><br><span class="small muted">3–5 days · fastest</span></span><strong>$3,120</strong></li>
+            <li><span><strong>DDP sea</strong><br><span class="small muted">28–34 days · lowest cost</span></span><strong>$1,540</strong></li>
+          </ul>
+        </article>
+      </aside>
+    </section>
+  </main>
