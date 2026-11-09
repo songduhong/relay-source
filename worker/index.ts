@@ -1,4 +1,4 @@
-﻿import { Hono } from "hono";
+import { Hono } from "hono";
 import { type Env } from "./types";
 import { authRoutes } from "./routes/auth";
 import { quoteRoutes } from "./routes/quotes";
@@ -15,7 +15,7 @@ app.use("*", async (context, next) => {
   context.header("X-Frame-Options", "DENY");
 });
 
-app.get("/api/health", (context) => context.json({ status: "ok", service: "relaysource", timestamp: new Date().toISOString() }));
+app.get("/api/health", (context) => context.json({ status: "ok", service: "sourcingrelay", timestamp: new Date().toISOString() }));
 app.route("/api/auth", authRoutes);
 app.route("/api/quotes", quoteRoutes);
 app.route("/api/track", trackRoutes);

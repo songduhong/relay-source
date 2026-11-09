@@ -1,4 +1,4 @@
-﻿import { useEffect } from "react";
+import { useEffect } from "react";
 import { useMutation } from "@tanstack/react-query";
 import { StaticPage } from "@/components/StaticPage";
 import { postJson, type TrackResponse } from "@/lib/api";
@@ -23,7 +23,7 @@ export default function TrackPage() {
   });
 
   useEffect(() => {
-    document.title = "Track order — RelaySource";
+    document.title = "Track order — SourcingRelay";
     const form = document.getElementById("guest-lookup-form") as HTMLFormElement | null;
     const button = form?.querySelector("button[type=submit]");
     const handler = (event: Event) => {
@@ -44,5 +44,5 @@ export default function TrackPage() {
     return () => form?.removeEventListener("submit", handler);
   }, [lookup]);
 
-  return <StaticPage title="Track order — RelaySource" description="Track your RelaySource order as a guest using your order number and quote email." html={html} />;
+  return <StaticPage title="Track order — SourcingRelay" description="Track your SourcingRelay order as a guest using your order number and quote email." html={html} />;
 }

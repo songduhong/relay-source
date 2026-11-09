@@ -1,6 +1,6 @@
-﻿{
+{
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "relaysource",
+  "name": "sourcingrelay",
   "main": "worker/index.ts",
   "compatibility_date": "2025-11-01",
   "assets": {
@@ -12,15 +12,15 @@
   "d1_databases": [
     {
       "binding": "DB",
-      "database_name": "relay-source-db",
-      "database_id": "00000000-0000-0000-0000-000000000000",
+      "database_name": "sourcing-relay-db",
+      "database_id": "e27d00af-620b-455f-aad2-f312964c3a73",
       "migrations_dir": "migrations"
     }
   ],
   "r2_buckets": [
     {
       "binding": "IMAGES",
-      "bucket_name": "relay-source-images"
+      "bucket_name": "sourcing-relay-images"
     }
   ],
   "observability": {

@@ -1,4 +1,4 @@
-﻿import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
 export function AppFooter() {
@@ -41,14 +41,14 @@ export function AppFooter() {
         <div>
           <h4>Contact</h4>
           <ul className="footer-list">
-            <li><a href="mailto:hello@relaysource.com">hello@relaysource.com</a></li>
+            <li><a href="mailto:hello@sourcingrelay.com">hello@sourcingrelay.com</a></li>
             <li>Mon–Fri, 9am–6pm CST</li>
             <li>Shenzhen · Global support</li>
           </ul>
         </div>
       </div>
       <div className="container footer-bottom">
-        <span>© {year} RelaySource. Global small-B sourcing, protected.</span>
+        <span>© {year} SourcingRelay. Global small-B sourcing, protected.</span>
         <span>Privacy · Terms · DDP shipping notes</span>
       </div>
     </footer>

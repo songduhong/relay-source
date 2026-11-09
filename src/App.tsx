@@ -1,4 +1,4 @@
-﻿import { lazy, Suspense } from "react";
+import { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import { Layout } from "@/components/Layout";
 import { ProtectedRoute } from "@/components/ProtectedRoute";
@@ -20,7 +20,7 @@ function PageFallback() {
   return (
     <main className="section" style={{ minHeight: "52vh", display: "grid", placeItems: "center" }}>
       <div className="container center" style={{ textAlign: "center" }}>
-        <span className="eyebrow">RelaySource</span>
+        <span className="eyebrow">SourcingRelay</span>
         <h1 style={{ marginTop: 10 }}>Loading...</h1>
       </div>
     </main>

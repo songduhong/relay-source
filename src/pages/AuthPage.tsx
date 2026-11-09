@@ -1,4 +1,4 @@
-﻿import { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { StaticPage } from "@/components/StaticPage";
 import { postJson } from "@/lib/api";
@@ -21,7 +21,7 @@ export default function AuthPage() {
   });
 
   useEffect(() => {
-    document.title = "Sign in — RelaySource";
+    document.title = "Sign in — SourcingRelay";
     const tabs = Array.from(document.querySelectorAll<HTMLButtonElement>("[data-auth-tab]"));
     const panels = Array.from(document.querySelectorAll<HTMLFormElement>("[data-auth-panel]"));
     const tabHandlers = tabs.map((tab) => {
@@ -77,7 +77,7 @@ export default function AuthPage() {
 
   return (
     <>
-      <StaticPage title="Sign in — RelaySource" description="Sign in to your RelaySource dashboard or create a buyer account." html={html} />
+      <StaticPage title="Sign in — SourcingRelay" description="Sign in to your SourcingRelay dashboard or create a buyer account." html={html} />
       {error && (
         <div aria-live="polite" style={{ position: "fixed", right: 24, bottom: 24, zIndex: 100 }} className="notice" role="alert">
           <span>⚠️</span><span>{error}</span>

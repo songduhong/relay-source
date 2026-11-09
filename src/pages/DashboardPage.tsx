@@ -1,4 +1,4 @@
-﻿import { useEffect } from "react";
+import { useEffect } from "react";
 import { StaticPage } from "@/components/StaticPage";
 import html from "@/content/dashboard.html?raw";
 
@@ -38,5 +38,5 @@ export default function DashboardPage() {
     };
   }, []);
 
-  return <StaticPage title="Dashboard — RelaySource" description="Your RelaySource order dashboard." html={html} />;
+  return <StaticPage title="Dashboard — SourcingRelay" description="Your SourcingRelay order dashboard." html={html} />;
 }

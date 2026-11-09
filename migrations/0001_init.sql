@@ -1,4 +1,4 @@
-﻿PRAGMA foreign_keys = ON;
+PRAGMA foreign_keys = ON;
 
 CREATE TABLE IF NOT EXISTS users (
   id TEXT PRIMARY KEY,
@@ -139,10 +139,10 @@ CREATE TABLE IF NOT EXISTS qc_records (
 CREATE INDEX IF NOT EXISTS idx_qc_records_item ON qc_records(order_item_id);
 
 INSERT OR IGNORE INTO users (id, email, password_hash, name, company, sales_channel, role)
-VALUES ('usr_demo_relay', 'demo@relaysource.com', 'pbkdf2$100000$VsmPoSG/c9FOtCMHmdEZAA==$N72Jk6yWn2taDvztJ64tzla5gTBro2hh74M6ogmByZQ=', 'Jordan Reed', 'Reed Retail LLC', 'TikTok Shop', 'customer');
+VALUES ('usr_demo_relay', 'demo@sourcingrelay.com', 'pbkdf2$100000$VsmPoSG/c9FOtCMHmdEZAA==$N72Jk6yWn2taDvztJ64tzla5gTBro2hh74M6ogmByZQ=', 'Jordan Reed', 'Reed Retail LLC', 'TikTok Shop', 'customer');
 
 INSERT OR IGNORE INTO orders (id, code, user_id, email, status, progress, destination, eta, sku_count, supplier_count, unit_count, landed_value)
-VALUES ('ord_SH2451', 'SH-2451', 'usr_demo_relay', 'demo@relaysource.com', 'in_qc', 68, 'Los Angeles, US', '2026-12-18', 36, 8, 1520, 6438.72);
+VALUES ('ord_SH2451', 'SH-2451', 'usr_demo_relay', 'demo@sourcingrelay.com', 'in_qc', 68, 'Los Angeles, US', '2026-12-18', 36, 8, 1520, 6438.72);
 
 INSERT OR IGNORE INTO order_items (id, order_id, sku, title, product_type, quantity, unit_cost, qc_status, risk_level, supplier_name, status, action_required) VALUES
 ('itm_case001', 'ord_SH2451', 'PC-IP15-MAG-001', 'MagSafe iPhone 15 case', 'Phone case', 120, 3.18, 'passed', 'low', 'Shenzhen Belaga Case Co.', 'ready', 0),

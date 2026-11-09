@@ -1,4 +1,4 @@
-﻿import { useEffect } from "react";
+import { useEffect } from "react";
 import { useMutation } from "@tanstack/react-query";
 import { StaticPage } from "@/components/StaticPage";
 import { postJson, type QuoteResponse } from "@/lib/api";
@@ -21,7 +21,7 @@ export default function QuotePage() {
   });
 
   useEffect(() => {
-    document.title = "Get a quote — RelaySource";
+    document.title = "Get a quote — SourcingRelay";
     document.querySelector('meta[name="description"]')?.setAttribute("content", "Submit a mixed-SKU buy list and receive supplier options, SKU-level landed costs and risk flags.");
 
     const form = document.querySelector<HTMLFormElement>("#quote-form form");
@@ -111,7 +111,7 @@ export default function QuotePage() {
     };
   }, [submitQuote]);
 
-  return <StaticPage title="Get a quote — RelaySource" description="Submit a mixed-SKU buy list and receive supplier options, SKU-level landed costs and risk flags." html={html} />;
+  return <StaticPage title="Get a quote — SourcingRelay" description="Submit a mixed-SKU buy list and receive supplier options, SKU-level landed costs and risk flags." html={html} />;
 }
 
 
