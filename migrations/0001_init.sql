@@ -21,22 +21,26 @@ CREATE TABLE IF NOT EXISTS sessions (
 CREATE INDEX IF NOT EXISTS idx_sessions_user ON sessions(user_id);
 CREATE INDEX IF NOT EXISTS idx_sessions_expiry ON sessions(expires_at);
 
+CREATE TABLE IF NOT EXISTS images (
+  id TEXT PRIMARY KEY,
+  r2_key TEXT UNIQUE NOT NULL,
+  mime_type TEXT NOT NULL,
+  size INTEGER NOT NULL,
+  entity_type TEXT NOT NULL,
+  entity_id TEXT NOT NULL,
+  uploaded_by TEXT REFERENCES users(id),
+  created_at TEXT NOT NULL DEFAULT (datetime('now'))
+);
+
 CREATE TABLE IF NOT EXISTS quotes (
   id TEXT PRIMARY KEY,
   code TEXT UNIQUE NOT NULL,
   email TEXT NOT NULL,
   name TEXT,
-  company TEXT,
   status TEXT NOT NULL DEFAULT 'submitted',
-  destination TEXT,
-  sales_channel TEXT,
-  shipping_method TEXT,
   launch_date TEXT,
-  target_price TEXT,
-  quantity_range TEXT,
+  attachment_id TEXT REFERENCES images(id),
   notes TEXT,
-  category_count INTEGER NOT NULL DEFAULT 0,
-  has_attachment INTEGER NOT NULL DEFAULT 0,
   user_id TEXT REFERENCES users(id),
   created_at TEXT NOT NULL DEFAULT (datetime('now')),
   updated_at TEXT NOT NULL DEFAULT (datetime('now'))
@@ -45,22 +49,6 @@ CREATE TABLE IF NOT EXISTS quotes (
 CREATE INDEX IF NOT EXISTS idx_quotes_email ON quotes(email);
 CREATE INDEX IF NOT EXISTS idx_quotes_status ON quotes(status);
 
-CREATE TABLE IF NOT EXISTS quote_items (
-  id TEXT PRIMARY KEY,
-  quote_id TEXT NOT NULL REFERENCES quotes(id) ON DELETE CASCADE,
-  sku TEXT,
-  title TEXT NOT NULL,
-  category TEXT,
-  quantity INTEGER NOT NULL,
-  target_price REAL,
-  status TEXT NOT NULL DEFAULT 'pending',
-  supplier_name TEXT,
-  supplier_city TEXT,
-  risk_flags TEXT,
-  created_at TEXT NOT NULL DEFAULT (datetime('now'))
-);
-
-CREATE INDEX IF NOT EXISTS idx_quote_items_quote ON quote_items(quote_id);
 
 CREATE TABLE IF NOT EXISTS orders (
   id TEXT PRIMARY KEY,
@@ -113,17 +101,6 @@ CREATE TABLE IF NOT EXISTS order_events (
 );
 
 CREATE INDEX IF NOT EXISTS idx_order_events_order ON order_events(order_id, occurred_at);
-
-CREATE TABLE IF NOT EXISTS images (
-  id TEXT PRIMARY KEY,
-  r2_key TEXT UNIQUE NOT NULL,
-  mime_type TEXT NOT NULL,
-  size INTEGER NOT NULL,
-  entity_type TEXT NOT NULL,
-  entity_id TEXT NOT NULL,
-  uploaded_by TEXT REFERENCES users(id),
-  created_at TEXT NOT NULL DEFAULT (datetime('now'))
-);
 
 CREATE INDEX IF NOT EXISTS idx_images_entity ON images(entity_type, entity_id);
 

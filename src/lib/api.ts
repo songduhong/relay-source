@@ -9,15 +9,16 @@
 export type QuoteRequest = {
   email: string;
   name?: string;
-  company?: string;
-  destination?: string;
-  salesChannel?: string;
-  shippingMethod?: string;
   launchDate?: string;
-  targetPrice?: string;
-  quantityRange?: string;
   notes?: string;
-  categoryCount?: number;
+  attachmentId?: string;
+};
+
+export type QuoteUploadResponse = {
+  id: string;
+  name: string;
+  size: number;
+  mimeType: string;
 };
 
 export type QuoteResponse = {
@@ -31,16 +32,44 @@ export type TrackRequest = {
   email: string;
 };
 
+export type TrackQcRecord = {
+  id: string;
+  status: string;
+  notes: string | null;
+  inspector: string | null;
+  createdAt: string;
+};
+
+export type TrackItem = {
+  id: string;
+  sku: string | null;
+  title: string;
+  productType: string | null;
+  quantity: number;
+  unitCost: number | null;
+  qcStatus: string;
+  riskLevel: string;
+  supplierName: string | null;
+  status: string;
+  actionRequired: boolean;
+  qcRecords: TrackQcRecord[];
+};
+
 export type TrackResponse = {
   code: string;
   status: string;
   progress: number;
-  destination: string;
-  eta: string;
+  destination: string | null;
+  eta: string | null;
   skuCount: number;
   supplierCount: number;
   units: number;
-  timeline: { stage: string; title: string; description?: string; occurredAt: string }[];
+  landedValue: number;
+  createdAt: string;
+  updatedAt: string;
+  timeline: { stage: string; title: string; description: string | null; status: string; occurredAt: string }[];
+  items: TrackItem[];
+  qcRecordCount: number;
 };
 
 export async function postJson<T>(url: string, payload: unknown): Promise<T> {

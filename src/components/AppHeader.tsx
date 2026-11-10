@@ -48,7 +48,6 @@ export function AppHeader() {
             </div>
           </div>
           <NavLink to="/track">Track order</NavLink>
-          <NavLink to="/dashboard">Dashboard</NavLink>
         </nav>
         <div className="nav-actions">
           <div className="header-contact" aria-label="Quick contact options">
