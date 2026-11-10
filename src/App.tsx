@@ -8,6 +8,7 @@ const ServicesPage = lazy(() => import("@/pages/ServicesPage"));
 const QuotePage = lazy(() => import("@/pages/QuotePage"));
 const TrackPage = lazy(() => import("@/pages/TrackPage"));
 const AboutPage = lazy(() => import("@/pages/AboutPage"));
+const ReviewsPage = lazy(() => import("@/pages/ReviewsPage"));
 const PaymentProtectionPage = lazy(() => import("@/pages/PaymentProtectionPage"));
 const QualityControlPage = lazy(() => import("@/pages/QualityControlPage"));
 const BlogPage = lazy(() => import("@/pages/BlogPage"));
@@ -37,6 +38,7 @@ export default function App() {
           <Route path="/quote" element={<QuotePage />} />
           <Route path="/track" element={<TrackPage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/about/reviews" element={<ReviewsPage />} />
           <Route path="/about/payment-protection" element={<PaymentProtectionPage />} />
           <Route path="/about/quality-control" element={<QualityControlPage />} />
           <Route path="/blog" element={<BlogPage />} />

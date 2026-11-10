@@ -11,17 +11,19 @@ export function AppFooter() {
         <div>
           <div className="brand" style={{ color: "white" }}>
             <span className="logo-mark" aria-hidden="true"></span>
-            <span className="brand-name">Relay<span className="brand-accent">Source</span></span>
+            <span className="brand-name">Sourcing<span className="brand-accent">Relay</span></span>
           </div>
           <p style={{ marginTop: 16 }}>China sourcing, Shenzhen market buying, mixed-SKU consolidation and global fulfillment for small-business sellers.</p>
         </div>
         <div>
           <h4>Services</h4>
           <ul className="footer-list">
-            <li><Link to="/services">Product sourcing</Link></li>
-            <li><Link to="/services">Multi-SKU buying</Link></li>
-            <li><Link to="/services">Market runs</Link></li>
-            <li><Link to="/services">QC & packing</Link></li>
+            <li><Link to="/services">Product Discovery</Link></li>
+            <li><Link to="/services">Multi-SKU Buy & Consolidate</Link></li>
+            <li><Link to="/services">Sample Sprint</Link></li>
+            <li><Link to="/services">Huaqiangbei Market Run</Link></li>
+            <li><Link to="/services">QC & Market-Ready Prep</Link></li>
+            <li><Link to="/services">Private Supplier Desk</Link></li>
           </ul>
         </div>
         <div>
@@ -29,8 +31,6 @@ export function AppFooter() {
           <ul className="footer-list">
             <li><Link to="/blog">Blog</Link></li>
             <li><Link to="/track">Track order</Link></li>
-            <li><Link to="/dashboard">Dashboard</Link></li>
-            <li><Link to="/dashboard/orders/SH-2451">Order demo</Link></li>
             <li><Link to="/quote">Get a quote</Link></li>
             <li><Link to={{ pathname: "/", hash: "#pricing" }} state={{ from: pathname }}>Pricing</Link></li>
             <li><Link to="/about">About us</Link></li>
@@ -41,8 +41,8 @@ export function AppFooter() {
         <div>
           <h4>Contact</h4>
           <ul className="footer-list">
-            <li><a href="mailto:hello@sourcingrelay.com">hello@sourcingrelay.com</a></li>
-            <li>Mon–Fri, 9am–6pm CST</li>
+            <li><a href="mailto:hello@sourcingrelay.com">lucy@sourcingrelay.com</a></li>
+            <li>Mon–Sat, 9am–6pm CST</li>
             <li>Shenzhen · Global support</li>
           </ul>
         </div>

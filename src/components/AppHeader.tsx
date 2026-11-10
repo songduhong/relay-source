@@ -3,10 +3,11 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
 
 const aboutLinks = [
-  { to: "/about", label: "Company overview" },
+  { to: "/about", label: "About us" },
+  { to: "/about/reviews", label: "Customer reviews" },
   { to: "/about/payment-protection", label: "Payment protection" },
   { to: "/about/quality-control", label: "Quality control" },
-  { to: "/blog", label: "Blog" }
+  { to: "/blog", label: "SourcingRelay blog" }
 ];
 
 export function AppHeader() {
@@ -42,7 +43,7 @@ export function AppHeader() {
           <a href="/#process" onClick={(event) => scrollToHash(event, "process")}>How it works</a>
           <a href="/#pricing" onClick={(event) => scrollToHash(event, "pricing")}>Pricing</a>
           <div className={topbarAboutClass}>
-            <NavLink to="/about">About us</NavLink>
+            <NavLink to="/about">About</NavLink>
             <div className="dropdown-menu">
               {aboutLinks.map((link) => <NavLink key={link.to} to={link.to}>{link.label}</NavLink>)}
             </div>
