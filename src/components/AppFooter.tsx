@@ -33,7 +33,9 @@ export function AppFooter() {
             <li><Link to="/track">Track order</Link></li>
             <li><Link to="/quote">Get a quote</Link></li>
             <li><Link to={{ pathname: "/", hash: "#pricing" }} state={{ from: pathname }}>Pricing</Link></li>
-            <li><Link to="/about">About us</Link></li>
+            <li><Link to="/about">Brand purpose</Link></li>
+            <li><Link to="/about/company">About us</Link></li>
+            <li><Link to="/about/reviews">Customer reviews</Link></li>
             <li><Link to="/about/quality-control">Quality control</Link></li>
             <li><Link to="/about/payment-protection">Payment protection</Link></li>
           </ul>
@@ -41,7 +43,7 @@ export function AppFooter() {
         <div>
           <h4>Contact</h4>
           <ul className="footer-list">
-            <li><a href="mailto:hello@sourcingrelay.com">lucy@sourcingrelay.com</a></li>
+            <li><a href="mailto:hello@sourcingrelay.com">hello@sourcingrelay.com</a></li>
             <li>Mon–Sat, 9am–6pm CST</li>
             <li>Shenzhen · Global support</li>
           </ul>

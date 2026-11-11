@@ -7,6 +7,8 @@ const routeMap: Record<string, string> = {
   "quote.html": "/quote",
   "track.html": "/track",
   "about.html": "/about",
+  "company.html": "/about/company",
+  "reviews.html": "/about/reviews",
   "payment-protection.html": "/about/payment-protection",
   "quality-control.html": "/about/quality-control",
   "blog.html": "/blog",

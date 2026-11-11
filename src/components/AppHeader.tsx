@@ -3,7 +3,8 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
 
 const aboutLinks = [
-  { to: "/about", label: "About us" },
+  { to: "/about", label: "SourcingRelay purpose" },
+  { to: "/about/company", label: "About us" },
   { to: "/about/reviews", label: "Customer reviews" },
   { to: "/about/payment-protection", label: "Payment protection" },
   { to: "/about/quality-control", label: "Quality control" },

@@ -4,8 +4,8 @@ import html from "@/content/about.html?raw";
 export default function AboutPage() {
   return (
     <StaticPage
-      title="About SourcingRelay — Global Small-B Sourcing Team"
-      description="Meet the SourcingRelay team and see how we protect global small-B buyers with transparent sourcing, QC, packing and shipping."
+      title="Brand purpose — SourcingRelay"
+      description="Why SourcingRelay exists: operational China sourcing, documented QC and transparent landed costs for small-B sellers."
       html={html}
     />
   );
