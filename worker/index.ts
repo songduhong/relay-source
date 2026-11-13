@@ -5,6 +5,7 @@ import { quoteRoutes } from "./routes/quotes";
 import { trackRoutes } from "./routes/tracking";
 import { orderRoutes, adminOrderRoutes } from "./routes/orders";
 import { imageRoutes } from "./routes/images";
+import { newsletterRoutes } from "./routes/newsletter";
 
 const app = new Hono<{ Bindings: Env }>();
 
@@ -22,6 +23,7 @@ app.route("/api/track", trackRoutes);
 app.route("/api/orders", orderRoutes);
 app.route("/api/admin/orders", adminOrderRoutes);
 app.route("/api/images", imageRoutes);
+app.route("/api/newsletter", newsletterRoutes);
 
 app.all("/api/*", (context) => context.json({ message: "API endpoint not found." }, 404));
 app.all("*", (context) => context.env.ASSETS.fetch(context.req.raw));

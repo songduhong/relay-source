@@ -12,7 +12,7 @@ const routeMap: Record<string, string> = {
   "payment-protection.html": "/about/payment-protection",
   "quality-control.html": "/about/quality-control",
   "blog.html": "/blog",
-  "blog-post.html": "/blog/shenzhen-sourcing-playbook",
+  "blog-post.html": "/blog/huaqiangbei-first-buyer-guide",
   "auth.html": "/auth",
   "dashboard.html": "/dashboard",
   "order.html": "/dashboard/orders/SH-2451"

@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="backdrop" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071827"/>
+      <stop offset="0.56" stop-color="#0C2238"/>
+      <stop offset="1" stop-color="#153D4F"/>
+    </linearGradient>
+    <linearGradient id="brand-wall" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FCFAF6"/>
+      <stop offset="1" stop-color="#E8E2D7"/>
+    </linearGradient>
+    <linearGradient id="counter" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFDF8"/>
+      <stop offset="1" stop-color="#CEC5B7"/>
+    </linearGradient>
+    <linearGradient id="kraft" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#D8B47D"/>
+      <stop offset="1" stop-color="#A97D48"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="150%" height="170%">
+      <feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#04111C" flood-opacity="0.35"/>
+    </filter>
+    <filter id="small-shadow" x="-30%" y="-30%" width="170%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#071827" flood-opacity="0.24"/>
+    </filter>
+    <pattern id="grid" width="46" height="46" patternUnits="userSpaceOnUse">
+      <path d="M46 0H0V46" fill="none" stroke="#FFFFFF" stroke-width="0.5" opacity="0.055"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#backdrop)"/>
+  <rect width="800" height="600" fill="url(#grid)"/>
+  <circle cx="704" cy="104" r="190" fill="#67C6BA" opacity="0.1"/>
+  <circle cx="76" cy="462" r="180" fill="#2B6F82" opacity="0.14"/>
+
+  <text x="42" y="39" fill="#91D8CF" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="2.1">SOURCINGRELAY / SHENZHEN OPERATIONS</text>
+  <rect x="42" y="53" width="74" height="2" fill="#67C6BA"/>
+  <text x="758" y="39" text-anchor="end" fill="#B7C7D5" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" letter-spacing="1.8">BRAND · SOURCE · QC · DDP</text>
+
+  <g transform="translate(116 76)" filter="url(#shadow)">
+    <rect width="568" height="265" rx="12" fill="url(#brand-wall)"/>
+    <rect width="568" height="10" rx="5" fill="#67C6BA"/>
+    <g transform="translate(57 48)">
+      <rect x="1" y="1" width="86" height="86" rx="20" fill="#0C2238"/>
+      <path d="M50 27H35C30.03 27 26 31.03 26 36V49" fill="none" stroke="#F8F6F1" stroke-width="5" stroke-linecap="round"/>
+      <path d="M37 64H52C56.97 64 61 59.97 61 55V42" fill="none" stroke="#67C6BA" stroke-width="5" stroke-linecap="round"/>
+      <path d="M44 40L50 45.5L44 51L38 45.5Z" fill="#F8F6F1"/>
+    </g>
+    <text x="178" y="84" fill="#0C2238" font-family="Arial, Helvetica, sans-serif" font-size="43" font-weight="700" letter-spacing="-1.7">SourcingRelay</text>
+    <text x="180" y="118" fill="#607080" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="2.6">SMALL-B SOURCING · QUALITY · DELIVERY</text>
+    <path d="M58 164H510" stroke="#D1C9BD" stroke-width="1.5"/>
+    <text x="57" y="202" fill="#0C2238" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" letter-spacing="1">ONE ACCOUNTABLE TEAM.</text>
+    <text x="57" y="226" fill="#6B7784" font-family="Arial, Helvetica, sans-serif" font-size="11">Buying, inspection, consolidation and dispatch in one direct relationship.</text>
+    <g transform="translate(450 175)">
+      <rect width="58" height="70" rx="5" fill="#F8F6F1" stroke="#D5DDE3"/>
+      <path d="M12 18H46M12 28H41M12 38H46" stroke="#AEB9C2" stroke-width="2"/>
+      <circle cx="29" cy="54" r="8" fill="#DDF3EC"/>
+      <path d="M25 54L28 57L33 50" fill="none" stroke="#0F766E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+
+  <g opacity="0.34" fill="#F8F6F1">
+    <rect x="38" y="162" width="48" height="78" rx="4"/>
+    <rect x="38" y="254" width="48" height="78" rx="4"/>
+    <rect x="714" y="162" width="48" height="78" rx="4"/>
+    <rect x="714" y="254" width="48" height="78" rx="4"/>
+  </g>
+
+  <g transform="translate(0 351)">
+    <rect width="800" height="249" fill="#C8BFB1"/>
+    <path d="M0 0H800" stroke="#F8F6F1" stroke-width="2" opacity="0.5"/>
+    <rect width="800" height="249" fill="url(#grid)" opacity="0.45"/>
+  </g>
+
+  <g transform="translate(67 376)" filter="url(#shadow)">
+    <rect width="237" height="146" rx="4" fill="url(#kraft)"/>
+    <path d="M119 0V146" stroke="#E8D0A2" stroke-width="25" opacity="0.72"/>
+    <rect x="25" y="26" width="155" height="88" rx="3" fill="#FBF9F4" filter="url(#small-shadow)"/>
+    <text x="39" y="49" fill="#0C2238" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700">SOURCINGRELAY</text>
+    <text x="39" y="67" fill="#687583" font-family="Arial, Helvetica, sans-serif" font-size="9">MIXED ORDER / SKU CONTROL</text>
+    <g fill="#0C2238">
+      <rect x="39" y="78" width="3" height="24"/><rect x="46" y="78" width="2" height="24"/><rect x="52" y="78" width="5" height="24"/><rect x="61" y="78" width="2" height="24"/><rect x="67" y="78" width="3" height="24"/><rect x="74" y="78" width="4" height="24"/><rect x="82" y="78" width="2" height="24"/><rect x="88" y="78" width="3" height="24"/><rect x="95" y="78" width="5" height="24"/><rect x="104" y="78" width="2" height="24"/>
+    </g>
+    <rect x="149" y="76" width="21" height="25" rx="3" fill="#DDF3EC"/>
+    <path d="M154 88L158 92L165 82" fill="none" stroke="#0F766E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g transform="translate(286 408)" filter="url(#shadow)">
+    <rect width="230" height="114" rx="4" fill="#E3C893"/>
+    <path d="M115 0V114" stroke="#F0DEB6" stroke-width="24" opacity="0.76"/>
+    <rect x="21" y="22" width="142" height="68" rx="3" fill="#FBF9F4"/>
+    <text x="33" y="43" fill="#0C2238" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="700">PACKED / READY</text>
+    <text x="33" y="58" fill="#6E7A87" font-family="Arial, Helvetica, sans-serif" font-size="8">5 SKUs · 1 dispatch record</text>
+    <g fill="#0C2238">
+      <rect x="33" y="68" width="3" height="13"/><rect x="40" y="68" width="2" height="13"/><rect x="46" y="68" width="4" height="13"/><rect x="54" y="68" width="2" height="13"/><rect x="60" y="68" width="3" height="13"/><rect x="67" y="68" width="5" height="13"/><rect x="76" y="68" width="2" height="13"/><rect x="82" y="68" width="3" height="13"/>
+    </g>
+  </g>
+
+  <g transform="translate(530 384)" filter="url(#shadow)">
+    <rect width="205" height="139" rx="4" fill="url(#kraft)"/>
+    <path d="M102 0V139" stroke="#E8D0A2" stroke-width="22" opacity="0.72"/>
+    <rect x="22" y="28" width="128" height="76" rx="3" fill="#FBF9F4"/>
+    <text x="34" y="49" fill="#0C2238" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700">DDP / GLOBAL</text>
+    <text x="34" y="64" fill="#6E7A87" font-family="Arial, Helvetica, sans-serif" font-size="8">Duties handled · tracked</text>
+    <path d="M34 76H104" stroke="#AEB9C2" stroke-width="2"/>
+    <rect x="126" y="67" width="22" height="27" rx="3" fill="#E4F2EE"/>
+    <path d="M131 80L135 84L143 73" fill="none" stroke="#0F766E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g transform="translate(85 405)" filter="url(#small-shadow)">
+    <rect width="156" height="104" rx="4" fill="#F8F6F1"/>
+    <rect x="14" y="15" width="128" height="4" rx="2" fill="#0C2238"/>
+    <text x="14" y="36" fill="#0C2238" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700">DISPATCH CHECK</text>
+    <g fill="#DDF3EC">
+      <circle cx="22" cy="55" r="6"/><circle cx="22" cy="77" r="6"/><circle cx="22" cy="99" r="6"/>
+    </g>
+    <g fill="none" stroke="#0F766E" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 55L21 58L26 51"/><path d="M18 77L21 80L26 73"/><path d="M18 99L21 102L26 95"/>
+    </g>
+    <path d="M36 55H125M36 77H113M36 99H120" stroke="#AEB8C2" stroke-width="2"/>
+  </g>
+
+  <g transform="translate(551 399)">
+    <rect width="150" height="91" rx="4" fill="#F8F6F1" filter="url(#small-shadow)"/>
+    <text x="14" y="25" fill="#0C2238" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700" letter-spacing="1">SOURCINGRELAY</text>
+    <text x="14" y="43" fill="#6B7784" font-family="Arial, Helvetica, sans-serif" font-size="8">QC PASS · LABEL SET · CARTON MAP</text>
+    <path d="M14 55H135" stroke="#D0D8DE" stroke-width="1"/>
+    <text x="14" y="73" fill="#0F766E" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700">READY FOR DISPATCH</text>
+  </g>
+
+  <path d="M54 559C209 538 594 538 744 559C592 582 210 582 54 559Z" fill="#071827" opacity="0.18" filter="url(#shadow)"/>
+  <text x="42" y="582" fill="#35485A" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" letter-spacing="1">ILLUSTRATIVE BRAND ENVIRONMENT · SOURCING · QC · DDP</text>
+</svg>

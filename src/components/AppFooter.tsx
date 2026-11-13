@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+import { BrandLockup } from "@/components/BrandLockup";
 
 export function AppFooter() {
   const { pathname } = useLocation();
@@ -10,8 +11,7 @@ export function AppFooter() {
       <div className="container footer-grid">
         <div>
           <div className="brand" style={{ color: "white" }}>
-            <span className="logo-mark" aria-hidden="true"></span>
-            <span className="brand-name">Sourcing<span className="brand-accent">Relay</span></span>
+            <BrandLockup />
           </div>
           <p style={{ marginTop: 16 }}>China sourcing, Shenzhen market buying, mixed-SKU consolidation and global fulfillment for small-business sellers.</p>
         </div>
@@ -43,7 +43,10 @@ export function AppFooter() {
         <div>
           <h4>Contact</h4>
           <ul className="footer-list">
-            <li><a href="mailto:hello@sourcingrelay.com">hello@sourcingrelay.com</a></li>
+            <li><a href="tel:+8618682351575">Phone: +86 186-8235-1575</a></li>
+            <li>WeChat: same number</li>
+            <li><a href="mailto:lucy@sourcingrelay.com">lucy@sourcingrelay.com</a></li>
+            <li>China address: North side of the third floor, Building B, Banwei Park Industrial Zone, No. 2 Yongxiang Road, Bantian Street, Longgang District, Shenzhen</li>
             <li>Mon–Sat, 9am–6pm CST</li>
             <li>Shenzhen · Global support</li>
           </ul>

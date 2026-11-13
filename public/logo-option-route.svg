@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Verified route icon">
+  <rect x="1" y="1" width="62" height="62" rx="16" fill="#0C2238"/>
+  <rect x="1.75" y="1.75" width="60.5" height="60.5" rx="15.25" fill="none" stroke="#294865" stroke-width="1.5"/>
+  <path d="M17 43L28 32L35 39L47 24" fill="none" stroke="#F8F6F1" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M39 23H48V32" fill="none" stroke="#67C6BA" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="17" cy="43" r="3" fill="#67C6BA"/>
+</svg>

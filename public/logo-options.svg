@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" role="img" aria-label="SourcingRelay icon directions">
+  <rect width="960" height="360" fill="#F5F7FA"/>
+
+  <g transform="translate(32 28)">
+    <rect width="280" height="304" rx="20" fill="#FFFFFF" stroke="#E1E7F0"/>
+    <g transform="translate(108 48)">
+      <rect x="1" y="1" width="62" height="62" rx="16" fill="#0C2238"/>
+      <path d="M18 30C18 21.72 24.72 15 33 15H41" fill="none" stroke="#F8F6F1" stroke-width="4" stroke-linecap="round"/>
+      <path d="M36 10L42 15L36 20" fill="none" stroke="#F8F6F1" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M46 34C46 42.28 39.28 49 31 49H23" fill="none" stroke="#67C6BA" stroke-width="4" stroke-linecap="round"/>
+      <path d="M28 44L22 49L28 54" fill="none" stroke="#67C6BA" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <text x="140" y="226" text-anchor="middle" fill="#0C2238" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Relay Loop</text>
+    <text x="140" y="253" text-anchor="middle" fill="#6B7788" font-family="Arial, Helvetica, sans-serif" font-size="12">Continuous handoff and return</text>
+  </g>
+
+  <g transform="translate(340 28)">
+    <rect width="280" height="304" rx="20" fill="#FFFFFF" stroke="#E1E7F0"/>
+    <g transform="translate(108 48)">
+      <rect x="1" y="1" width="62" height="62" rx="16" fill="#0C2238"/>
+      <path d="M17 43L28 32L35 39L47 24" fill="none" stroke="#F8F6F1" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M39 23H48V32" fill="none" stroke="#67C6BA" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="17" cy="43" r="3" fill="#67C6BA"/>
+    </g>
+    <text x="140" y="226" text-anchor="middle" fill="#0C2238" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Verified Route</text>
+    <text x="140" y="253" text-anchor="middle" fill="#6B7788" font-family="Arial, Helvetica, sans-serif" font-size="12">Sourcing with a quality checkpoint</text>
+  </g>
+
+  <g transform="translate(648 28)">
+    <rect width="280" height="304" rx="20" fill="#FFFFFF" stroke="#E1E7F0"/>
+    <g transform="translate(108 48)">
+      <rect x="1" y="1" width="62" height="62" rx="16" fill="#0C2238"/>
+      <path d="M16 20H27C30.31 20 33 22.69 33 26V32" fill="none" stroke="#F8F6F1" stroke-width="4" stroke-linecap="round"/>
+      <path d="M48 44H37C33.69 44 31 41.31 31 38V32" fill="none" stroke="#67C6BA" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="32" cy="32" r="5" fill="#F8F6F1"/>
+    </g>
+    <text x="140" y="226" text-anchor="middle" fill="#0C2238" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Dispatch Node</text>
+    <text x="140" y="253" text-anchor="middle" fill="#6B7788" font-family="Arial, Helvetica, sans-serif" font-size="12">Two parties, one managed order</text>
+  </g>
+</svg>

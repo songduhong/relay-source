@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Relay loop icon">
+  <rect x="1" y="1" width="62" height="62" rx="16" fill="#0C2238"/>
+  <rect x="1.75" y="1.75" width="60.5" height="60.5" rx="15.25" fill="none" stroke="#294865" stroke-width="1.5"/>
+  <path d="M18 30C18 21.72 24.72 15 33 15H41" fill="none" stroke="#F8F6F1" stroke-width="4" stroke-linecap="round"/>
+  <path d="M36 10L42 15L36 20" fill="none" stroke="#F8F6F1" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M46 34C46 42.28 39.28 49 31 49H23" fill="none" stroke="#67C6BA" stroke-width="4" stroke-linecap="round"/>
+  <path d="M28 44L22 49L28 54" fill="none" stroke="#67C6BA" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

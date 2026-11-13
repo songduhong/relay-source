@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#102B43"/>
+      <stop offset="1" stop-color="#071827"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#DCD5C8"/>
+      <stop offset="1" stop-color="#C9C1B4"/>
+    </linearGradient>
+    <filter id="soft-shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="11"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#wall)"/>
+  <path d="M0 454H800V600H0Z" fill="url(#floor)"/>
+  <path d="M0 454H800" stroke="#F5F0E7" stroke-opacity="0.22" stroke-width="2"/>
+  <circle cx="692" cy="252" r="176" fill="#2D6C78" opacity="0.12"/>
+  <circle cx="94" cy="410" r="142" fill="#67C6BA" opacity="0.08"/>
+
+  <text x="40" y="39" fill="#91D8CF" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="2.1">ILLUSTRATIVE TEAM / SHENZHEN</text>
+  <rect x="40" y="53" width="72" height="2" fill="#67C6BA"/>
+
+  <g transform="translate(232 68)">
+    <rect width="336" height="102" rx="9" fill="#F8F6F1"/>
+    <rect x="0" y="0" width="6" height="102" rx="3" fill="#67C6BA"/>
+    <text x="168" y="49" text-anchor="middle" fill="#0C2238" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700" letter-spacing="-1.2">SourcingRelay</text>
+    <text x="168" y="74" text-anchor="middle" fill="#718091" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="700" letter-spacing="2">SOURCING · QUALITY · RELAY</text>
+    <g transform="translate(91 83)">
+      <rect x="-11" y="-6" width="22" height="14" rx="2" fill="none" stroke="#0C2238" stroke-width="1.2"/>
+      <path d="M-6 -2H0L5 2M0 -2L-5 2" fill="none" stroke="#0F766E" stroke-width="1.2" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <g opacity="0.22" fill="#F8F6F1">
+    <rect x="38" y="206" width="122" height="7" rx="3"/>
+    <rect x="38" y="251" width="94" height="7" rx="3"/>
+    <rect x="640" y="206" width="122" height="7" rx="3"/>
+    <rect x="668" y="251" width="94" height="7" rx="3"/>
+  </g>
+  <g opacity="0.18" fill="#67C6BA">
+    <rect x="38" y="326" width="38" height="66" rx="4"/>
+    <rect x="84" y="306" width="46" height="86" rx="4"/>
+    <rect x="682" y="298" width="38" height="94" rx="4"/>
+    <rect x="728" y="323" width="34" height="69" rx="4"/>
+  </g>
+
+  <!-- Back row -->
+  <g transform="translate(145 246)">
+    <path d="M-51 210C-51 124-39 92 0 92C39 92 51 124 51 210Z" fill="#3F7D75"/>
+    <rect x="-9" y="72" width="18" height="28" rx="7" fill="#D4A17D"/>
+    <circle cy="45" r="31" fill="#D4A17D"/>
+    <path d="M-31 45C-31 12-15 4 0 4C18 4 31 17 31 45C22 36 11 31 0 31C-13 31-24 36-31 45Z" fill="#1B242D"/>
+    <path d="M-34 35C-28 14-14 2 2 2C20 2 32 15 34 35C22 26 11 22 0 22C-12 22-25 25-34 35Z" fill="#1B242D"/>
+  </g>
+  <g transform="translate(270 228)">
+    <path d="M-55 220C-55 125-41 92 0 92C41 92 55 125 55 220Z" fill="#E9E3D8"/>
+    <rect x="-9" y="72" width="18" height="28" rx="7" fill="#C18C69"/>
+    <circle cy="45" r="31" fill="#C18C69"/>
+    <path d="M-30 42C-30 13-14 3 2 3C20 3 31 16 31 42C20 33 10 28-1 28C-13 28-24 32-30 42Z" fill="#20262D"/>
+    <path d="M-22 191H22" stroke="#C9C1B4" stroke-width="2"/>
+  </g>
+  <g transform="translate(400 218)">
+    <path d="M-57 230C-57 128-42 94 0 94C42 94 57 128 57 230Z" fill="#345B7B"/>
+    <rect x="-9" y="72" width="18" height="28" rx="7" fill="#E2B28D"/>
+    <circle cy="45" r="31" fill="#E2B28D"/>
+    <path d="M-31 45C-31 12-16 3 0 3C18 3 31 16 31 45C24 35 14 29 0 29C-14 29-24 35-31 45Z" fill="#181F27"/>
+    <path d="M-18-12C-5-24 13-20 24-9C14-17 2-18-8-11Z" fill="#181F27"/>
+  </g>
+  <g transform="translate(530 232)">
+    <path d="M-54 216C-54 126-40 94 0 94C40 94 54 126 54 216Z" fill="#7E8B99"/>
+    <rect x="-9" y="72" width="18" height="28" rx="7" fill="#D0A07C"/>
+    <circle cy="45" r="31" fill="#D0A07C"/>
+    <path d="M-29 41C-29 14-15 4 1 4C18 4 30 15 30 41C21 32 10 27-1 27C-12 27-22 32-29 41Z" fill="#26201D"/>
+  </g>
+  <g transform="translate(655 248)">
+    <path d="M-52 206C-52 121-38 91 0 91C38 91 52 121 52 206Z" fill="#B7A477"/>
+    <rect x="-9" y="72" width="18" height="28" rx="7" fill="#DCAE8A"/>
+    <circle cy="45" r="31" fill="#DCAE8A"/>
+    <path d="M-31 45C-31 13-15 3 1 3C18 3 31 16 31 45C22 36 10 31-1 31C-13 31-24 36-31 45Z" fill="#1A232C"/>
+    <circle cx="0" cy="-16" r="12" fill="#1A232C"/>
+  </g>
+
+  <!-- Front row -->
+  <g transform="translate(192 344)">
+    <path d="M-61 241C-61 126-46 91 0 91C46 91 61 126 61 241Z" fill="#254D69"/>
+    <rect x="-10" y="70" width="20" height="30" rx="8" fill="#BE8968"/>
+    <circle cy="42" r="33" fill="#BE8968"/>
+    <path d="M-31 41C-31 13-16 2 1 2C20 2 32 14 32 41C23 32 11 26-1 26C-14 26-24 31-31 41Z" fill="#1D242B"/>
+    <path d="M-43 150C-69 170-73 205-60 222M43 150C69 168 73 202 61 220" fill="none" stroke="#254D69" stroke-width="24" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(304 332)">
+    <path d="M-57 250C-57 128-43 92 0 92C43 92 57 128 57 250Z" fill="#D6C7B4"/>
+    <rect x="-9" y="71" width="18" height="29" rx="7" fill="#C79370"/>
+    <circle cy="43" r="32" fill="#C79370"/>
+    <path d="M-32 48C-34 13-16 0 1 0C21 0 34 15 32 48C24 37 12 31-1 31C-14 31-25 37-32 48Z" fill="#23201E"/>
+    <path d="M-27 34C-20 18-8 11 4 11C17 11 27 20 30 34" fill="none" stroke="#23201E" stroke-width="9" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(400 316)">
+    <path d="M-68 270C-68 136-50 96 0 96C50 96 68 136 68 270Z" fill="#0C1825"/>
+    <path d="M-38 99L0 150L38 99L59 115L34 270H-34L-59 115Z" fill="#111F2D"/>
+    <path d="M-22 98L0 137L22 98L32 108L0 158L-32 108Z" fill="#F8F6F1"/>
+    <rect x="-10" y="73" width="20" height="30" rx="8" fill="#D5A07A"/>
+    <circle cy="43" r="33" fill="#D5A07A"/>
+    <path d="M-34 49C-35 13-17 0 1 0C22 0 35 15 34 49C25 37 13 31-1 31C-15 31-26 37-34 49Z" fill="#1B2026"/>
+    <path d="M-33 42C-29 15-14 2 4 2C23 2 33 17 32 43L39 67L28 61C23 52 16 47 4 47C-10 47-20 52-27 61L-39 67Z" fill="#1B2026"/>
+    <path d="M-18 139C-30 188-17 214 16 224" fill="none" stroke="#36536E" stroke-width="3"/>
+    <rect x="4" y="190" width="34" height="24" rx="3" fill="#F8F6F1"/>
+    <text x="8" y="206" fill="#0C2238" font-family="Arial, Helvetica, sans-serif" font-size="7" font-weight="700">LUCY</text>
+    <path d="M-49 154C-75 172-79 209-65 227M49 154C75 172 79 209 65 227" fill="none" stroke="#0C1825" stroke-width="27" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(498 332)">
+    <path d="M-58 250C-58 128-44 92 0 92C44 92 58 128 58 250Z" fill="#4B667B"/>
+    <rect x="-9" y="71" width="18" height="29" rx="7" fill="#D1A17B"/>
+    <circle cy="43" r="32" fill="#D1A17B"/>
+    <path d="M-31 42C-31 14-16 3 1 3C19 3 32 15 32 42C23 33 12 28-1 28C-14 28-24 33-31 42Z" fill="#171D23"/>
+    <path d="M-34 186H34" stroke="#A7B7C6" stroke-width="2" opacity="0.45"/>
+  </g>
+  <g transform="translate(610 344)">
+    <path d="M-62 241C-62 126-47 91 0 91C47 91 62 126 62 241Z" fill="#47745D"/>
+    <rect x="-10" y="70" width="20" height="30" rx="8" fill="#E1B18C"/>
+    <circle cy="42" r="33" fill="#E1B18C"/>
+    <path d="M-33 48C-34 13-16 0 1 0C21 0 34 15 33 48C24 36 13 31-1 31C-14 31-26 36-33 48Z" fill="#1B222B"/>
+    <path d="M-55 178L-98 222L-61 241L-22 204Z" fill="#E3D8C7"/>
+  </g>
+
+  <path d="M103 552C212 528 588 528 696 552C585 577 214 577 103 552Z" fill="#071827" opacity="0.16" filter="url(#soft-shadow)"/>
+
+  <g transform="translate(43 445)">
+    <rect width="76" height="63" rx="3" fill="#C8B99E"/>
+    <path d="M0 15H76M38 0V63" stroke="#9D8C70" stroke-width="2"/>
+    <rect x="8" y="23" width="30" height="14" rx="2" fill="#F8F6F1"/>
+    <path d="M12 27H31M12 32H25" stroke="#7C8791" stroke-width="1.5"/>
+  </g>
+  <g transform="translate(678 437)">
+    <rect width="80" height="72" rx="3" fill="#B7A98F"/>
+    <path d="M0 16H80M40 0V72" stroke="#8F7F66" stroke-width="2"/>
+    <rect x="46" y="25" width="27" height="17" rx="2" fill="#F8F6F1"/>
+    <path d="M51 30H68M51 35H64" stroke="#7C8791" stroke-width="1.5"/>
+  </g>
+
+  <text x="40" y="571" fill="#445464" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" letter-spacing="1.1">ILLUSTRATIVE TEAM COMPOSITION · ACTUAL TEAM PHOTO PENDING</text>
+</svg>

@@ -1,1 +1,1 @@
-{"root":["./worker/index.ts","./worker/types.ts","./worker/lib/session.ts","./worker/routes/auth.ts","./worker/routes/images.ts","./worker/routes/orders.ts","./worker/routes/quotes.ts","./worker/routes/tracking.ts"],"version":"5.9.3"}
+{"root":["./worker/index.ts","./worker/types.ts","./worker/lib/session.ts","./worker/routes/auth.ts","./worker/routes/images.ts","./worker/routes/newsletter.ts","./worker/routes/orders.ts","./worker/routes/quotes.ts","./worker/routes/tracking.ts"],"version":"5.9.3"}
